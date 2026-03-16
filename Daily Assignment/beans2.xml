@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="sbu" class="com.demo.lab1_2.SBU">
+
+        <property name="sbuId" value="1"/>
+        <property name="sbuName" value="Product Engineering Services"/>
+        <property name="sbuHead" value="Natarajan"/>
+
+    </bean>
+
+    <bean id="employee" class="com.demo.lab1_2.Employee">
+
+        <property name="empId" value="101"/>
+        <property name="empName" value="Kushagra"/>
+        <property name="salary" value="45000"/>
+        <property name="age" value="22"/>
+        <property name="sbu" ref="sbu"/>
+
+    </bean>
+
+</beans>
